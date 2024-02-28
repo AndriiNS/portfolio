@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" href="./img/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__row">
+      <div class="logo">
+        <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__item"><a href="#home" class="header__link">Home</a></li>
+          <li class="header__item"><a href="#" class="header__link">About</a></li>
+          <li class="header__item"><a href="#" class="header__link">Projects</a></li>
+          <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="mobile-nav">
+	<ul class="mobile-nav__list">
+		<li><a href="#" class="active">Home</a></li>
+		<li><a href="#!">Services</a></li>
+		<li><a href="#!">About</a></li>
+		<li><a href="#!">Projects</a></li>
+		<li><a href="#!">Contact</a></li>
+	</ul>
+</div>
+
+<button class="mobile-nav-btn">
+  <div class="nav-icon"></div>
+</button>
+
+    <main class="main"><section class="info" id="home">
+  <div class="container">
+    <div class="info__content">
+      <img src="./img/small-celestial-fog.svg" alt="small-fog" class="info__small-fog" />
+      <div class="info__text">
+        <h1 class="info__text-title">Welcome</h1>
+        <p class="info__text-text">to my portfolio, I hope we will find a common language.</p>
+      </div>
+      <img src="./img/moon art.svg" alt="moon" class="info__moon" />
+    </div>
+  </div>
+</section>
+</main>
+    <footer class="footer">
+	<div class="container">
+		<h2>Footer</h2>
+	</div>
+</footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+      integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      SmoothScroll({
+        // Время скролла 400 = 0.4 секунды
+        animationTime: 1400,
+        // Размер шага в пикселях
+        stepSize: 55,
+
+        // Дополнительные настройки:
+
+        // Ускорение
+        accelerationDelta: 30,
+        // Максимальное ускорение
+        accelerationMax: 2,
+
+        // Поддержка клавиатуры
+        keyboardSupport: true,
+        // Шаг скролла стрелками на клавиатуре в пикселях
+        arrowScroll: 50,
+
+        // Pulse (less tweakable)
+        // ratio of "tail" to "acceleration"
+        pulseAlgorithm: true,
+        pulseScale: 4,
+        pulseNormalize: 1,
+
+        // Поддержка тачпада
+        touchpadSupport: true
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>
