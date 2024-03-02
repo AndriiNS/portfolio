@@ -54,7 +54,7 @@
     position: absolute;
     right: 70px;
     bottom: 0;
-    animation: moveMoon 30s linear infinite;
+    animation: moveMoon 20s linear infinite;
   }
 }
 @keyframes moveMoon {
@@ -67,4 +67,8 @@
   100% {
     transform: translateX(0);
   }
+}
+.line1 {
+  position: absolute;
+  margin-top: 70px;
 }

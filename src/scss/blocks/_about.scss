@@ -1,0 +1,135 @@
+.about {
+  // .about__descr
+  position: relative;
+
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  // .about__title
+
+  &__title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.24px;
+    color: #7ee787;
+  }
+
+  // .about__text
+
+  &__text {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: -1.44px;
+    max-width: 700px;
+  }
+
+  // .about__content
+
+  &__content {
+  }
+
+  // .about__content-block1
+
+  &__content-block1 {
+    margin-left: 100px;
+    box-sizing: border-box;
+    border: 1px solid rgb(48, 54, 61);
+    border-radius: 8px;
+    padding: 50px 120px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 4px 0px rgba(0, 0, 0, 0.08),
+      0px 10px 8px 0px rgba(0, 0, 0, 0.1), 0px 15px 15px 0px rgba(0, 0, 0, 0.12),
+      0px 30px 30px 0px rgba(0, 0, 0, 0.14), 0px 70px 65px 0px rgba(0, 0, 0, 0.18),
+      0px 0px 0px 1px rgba(0, 0, 0, 0.5);
+    background: rgb(22, 27, 34);
+  }
+
+  // .about__content-text
+
+  &__content-text {
+  }
+
+  // .about__content-block2
+
+  &__content-block2 {
+    border-left: 1px solid rgb(110, 118, 129);
+    border-top: 1px solid rgb(110, 118, 129);
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(22, 27, 34);
+    padding: 50px 50px;
+    max-width: 630px;
+    transform: translateY(-13%);
+    margin-left: 500px;
+  }
+}
+.container {
+}
+.aside {
+  // .aside__box
+
+  &__box {
+    display: flex;
+    padding-left: 43px;
+    gap: 90px;
+  }
+}
+.arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: jumpAnimationArrow 1s infinite alternate;
+  &::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 300px;
+    border-radius: 6px;
+    background: linear-gradient(
+      180deg,
+      rgb(86, 211, 100),
+      rgb(46, 160, 67) 50%,
+      rgb(13, 17, 23) 100%
+    );
+    animation: jumpAnimationAfter 1s infinite alternate;
+  }
+}
+.green {
+  color: #7ee787;
+}
+.cloud-about {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  animation: forClouds 5s linear infinite alternate;
+}
+
+@keyframes jumpAnimationArrow {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes jumpAnimationAfter {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+@keyframes forClouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
