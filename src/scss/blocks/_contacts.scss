@@ -61,7 +61,7 @@
       display: block;
       width: 70px;
       height: 70px;
-      background-image: url("../../img/phone.svg");
+      background-image: url("./../img/phone.svg");
       background-position: center;
       background-repeat: no-repeat;
       animation: jumpAnimationArrow 1s infinite alternate;
@@ -84,7 +84,7 @@
   &__group {
     position: absolute;
     right: 10%;
-    top: 0;
+    top: -10%;
     animation: moveMoon 20s linear infinite;
   }
 }
