@@ -7,3 +7,10 @@ body {
   color: var(--text-color);
   font-family: var(--font-main);
 }
+::-webkit-scrollbar {
+  background-color: rgb(31, 30, 30);
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(77, 0, 74);
+}

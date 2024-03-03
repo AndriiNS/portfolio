@@ -83,6 +83,9 @@
         rgb(13, 17, 23) 100%
       );
     }
+    @media (max-width: 700px) {
+      padding: 10px;
+    }
   }
 }
 //========================================================================================================================================================
@@ -92,6 +95,11 @@
   &__info {
     margin-top: -400px;
     margin-left: 200px;
+
+    @media (max-width: 700px) {
+      margin-left: 50px;
+      max-width: 600px;
+    }
   }
 
   // .projects__info-title
@@ -128,6 +136,9 @@
     gap: 30px;
     margin-left: 100px;
     margin-top: -30px;
+    @media (max-width: 700px) {
+      margin-left: 50px;
+    }
   }
 }
 
@@ -162,6 +173,11 @@
     max-width: 400px;
     margin-left: 64%;
     margin-top: -25%;
+    @media (max-width: 700px) {
+      margin-left: 50px;
+      max-width: 600px;
+      margin-top: -1%;
+    }
   }
 
   // // .projects__info-title
@@ -214,6 +230,9 @@
       rgb(13, 17, 23) 100%
     );
   }
+  @media (max-width: 700px) {
+    margin-left: 10px;
+  }
 }
 
 .same-project {
@@ -227,6 +246,9 @@
     margin-left: 600px;
     margin-top: -400px;
     z-index: 10;
+    @media (max-width: 700px) {
+      margin: 0 auto;
+    }
   }
 }
 

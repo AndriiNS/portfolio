@@ -44,6 +44,9 @@
         rgb(13, 17, 23) 100%
       );
     }
+    @media (max-width: 700px) {
+      padding-left: 0;
+    }
   }
 
   // .contacts__content-title
@@ -77,6 +80,14 @@
     line-height: 52px;
     letter-spacing: -1.44px;
     margin-right: -100px;
+    @media (max-width: 700px) {
+      margin-right: 0;
+      margin-left: -200px;
+      margin-bottom: 50px;
+    }
+    @media (max-width: 500px) {
+      margin-top: 400px;
+    }
   }
 
   // .contacts__group
@@ -86,6 +97,12 @@
     right: 10%;
     top: -10%;
     animation: moveMoon 20s linear infinite;
+    @media (max-width: 700px) {
+      top: -15%;
+    }
+    @media (max-width: 500px) {
+      animation: none;
+    }
   }
 }
 .blue {
