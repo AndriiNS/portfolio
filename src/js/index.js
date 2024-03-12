@@ -4,8 +4,7 @@ mobileNav();
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-
-gsap.from(".logo", { duration: 2, y: -100, opacity: 0, delay: 1 });
+gsap.from(".logo", { duration: 2, y: -100, opacity: 0, delay: 1, rotateX: 360 });
 gsap.from(".header__item", {
   opacity: 0,
   y: -50,
@@ -21,7 +20,7 @@ gsap.from(".letter", {
   duration: 2,
   delay: 2
 });
-gsap.from(".info__small-fog", { opacity: 0, x: 200, duration: 3, delay: 3 });
+gsap.from(".info__small-fog", { opacity: 0, x: 200, duration: 3, delay: 3, rotateY: 360 });
 
 const aboutTitle = document.querySelector(".about__title");
 
@@ -55,7 +54,7 @@ gsap.set(aboutTitle, {
 // Анімація при появі
 gsap.to(aboutTitle, {
   opacity: 1,
-  x: 0, // Змінено на 0, щоб встановити елемент на своє місце
+  x: 0,
   duration: 1.5,
   scrollTrigger: {
     trigger: aboutTitle,
@@ -63,3 +62,44 @@ gsap.to(aboutTitle, {
     end: "+=500"
   }
 });
+//========================================================================================================================================================
+const aboutText = document.querySelector(".about__text");
+
+const paragraphElement = document.createElement("p");
+paragraphElement.innerHTML = aboutText.innerHTML;
+aboutText.innerHTML = "";
+aboutText.appendChild(paragraphElement);
+
+gsap.set(paragraphElement, {
+  opacity: 0,
+  y: 50
+});
+
+// Animation on appear
+gsap.to(paragraphElement, {
+  opacity: 1,
+  y: 0,
+  duration: 1.5,
+  scrollTrigger: {
+    trigger: paragraphElement,
+    start: "top center",
+    end: "bottom center",
+    once: true // Ensures the animation only happens once
+  }
+});
+//========================================================================================================================================================
+gsap.set(".about__content-block2", { opacity: 0, x: "100%" });
+
+// Animation for the second block
+gsap.to(".about__content-block2", {
+  opacity: 1,
+  x: "0%",
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#contentText2",
+    start: "top center",
+    end: "bottom center",
+    once: true
+  }
+});
+//========================================================================================================================================================
